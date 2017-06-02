@@ -3,42 +3,19 @@
 	<head>
 		<title>Guess My Number!</title>
 		<meta charset=”UTF-8”>
-		<meta name=”content” keywords=””>
-		//include link tag for your css, script tags for your .js and jquery files
+		<meta name=”content” keywords=”Guess_my_number”>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="application.js"></script>
 	</head>
 	<body>
 		<h1>I’m thinking of a number between 1 and 100…</h1>
 		<h3>Try to guess it!</h3>
 		<form>
-			//create an input element with a specific name here
+			<input name="Box">
 		</form><br>
-		//create a button here with the id=”submit”
-		//create a button here with the id=”clear”
+		<button id="Submit">enter</button>
+		<button id="Clear">again</button>
 		<div id=”response”></div>
 	</body>
 </html>
-
-
-stylesheet.css
-h1, h3, form{
-	text-align:center;
-}
-
-#response{
-	width:150px;
-	height: 100px;
-	border: 2px dotted blue;
-}
-
-
-application.js
-$(document).ready(function(){
-	var random_num = Math.floor((Math.random()*100) + 1);
-	//create click event for submit button
-
-
-
-	//create click event for clear button
-
-
-});
